@@ -1,6 +1,9 @@
-#include<iostream>
+#include <iostream>
+#include "trie.h"
 
-int main() {
+int main()
+{
     std::cout << "\t\t==== DSA-Project ====\n";
+
     return 0;
 }
