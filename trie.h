@@ -2,12 +2,15 @@
 #ifndef _TRIE_H_
 #define _TRIE_H_
 
-struct Node {
-
+struct Node
+{
 };
 
-class Trie {
-
+class Trie
+{
+protected:
+private:
+public:
 };
 
 #include "trie.cpp"
