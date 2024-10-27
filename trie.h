@@ -10,7 +10,6 @@ class Trie
 {
 protected:
 private:
-    Node* root;
 public:
 };
 
