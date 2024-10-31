@@ -10,7 +10,7 @@ struct trieNode
     bool flag;
     std::string val;
 
-    trieNode() : val("")
+    trieNode() : val(""), flag(false)
     {
         for (int i = 0; i < 26; i++)
         {
@@ -25,12 +25,21 @@ class Trie
 private:
     trieNode *root;
 
+    void helperDestroy(trieNode *&);
+    void helperAutoSearch(std::vector<std::string> &, trieNode *);
+    bool helperRemove(trieNode *, std::string, int);
+
 public:
     Trie();
+    ~Trie();
 
+    bool isEmpty();
     void insert(std::string);
     bool search(std::string);
     bool startsWith(std::string);
+    void remove(std::string);
+
+    std::vector<std::string> autoComplete(std::string);
 };
 
 #include "trie.cpp"
